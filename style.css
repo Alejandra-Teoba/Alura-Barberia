@@ -1,0 +1,280 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #BBBBBB;
+    padding: 20px 0; /* espaciamiento externo 20px para superior e inferior y 0 en los laterales */
+}
+
+.caja {
+    width: 940px; /*ancho */
+    position: relative;
+    margin: 0 auto; /*margen  superior e inferior y automatico a los bordes de acuerdo a la resolución de pantalla donde se abra la página */
+}
+
+nav {
+    position: absolute;
+    top: 110px; /*quita el espacio de la parte superior */
+    right: 0 /* parte derecha 0*/
+}
+
+nav li {
+    display: inline-block; /* quita la configuración de las listas y coloca los elementos a lado */
+    margin: 0 0 0 15px; /*primer número espacio hacia arriba,segundo hacia la izquierda,el tercero y el ultimo es hacia a la izquierda */
+}
+
+nav a {
+    text-transform: uppercase; /*Coloca el texto en mayuscula */
+    color: #000000; /*color de texto */
+    font-weight: bold; /* fuente letra negrita */
+    font-size: 20px; /* tamaño de la fuente  */
+    text-decoration: none; /* quita el subrayado predeterminado de los vínculos */
+
+    
+}
+
+nav a:hover {  /*hover captura el movimiento del mouse del usuario */
+    color: #c78c19;
+    text-decoration: underline; /* subrayado */
+
+}
+
+.productos {
+    width: 940px; /*ancho */
+    margin: 0 auto; /*margen  superior e inferior y automatico a los bordes de acuerdo a la resolución de pantalla donde se abra la página */
+    padding: 50px; /* espacio entre el main y el header */
+}
+
+.productos li {
+    display: inline-block; /*quita display block de las listas */
+    text-align: center; /* texto alineado al centro */
+    width: 30%; /* 30% de espacio para cada elemento */
+    vertical-align: top; /* alineación de los ítems sea en vertical en la parte superior */
+    margin: 0 1.5%; /* 0 en vertical y en lateral 1.5 */
+    padding: 30px 20px; /* espacio interno 30 en vertical y 20 en horizontal */
+    box-sizing: border-box; /*el borde de cada item sera el limite del espacio que sera definido */ 
+    border-color: #000000;
+    border-width: 2px; /*ancho del borde */
+    border-style: solid; 
+    /*para definir en una sola linea las propiedades de los bordes es border: 2px solid #000000 */
+    border-radius: 10px; 
+
+}
+
+.productos li:hover { /*captura el movimiento del mouse */
+    border-color: #c78c19;
+}
+
+.productos li:active { /*captura el click del mouse */
+    border-color: #088c19;
+
+}
+
+.productos h2 {
+    font-size: 30px; /* tamaño de la letra */
+    font-weight: bold; /* peso texto en negrita */
+}
+
+.productos li:hover h2 { /*cuando se posiciona en cualquier area del li aplica lo siguiente al h2 */
+    font-size: 33px; /*aumenta a este tamaño cuando se posiciona el mouse sobre los productos */
+
+}
+
+.producto-descripcion {
+    font-size: 18px;
+}
+
+.producto-precio {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px; /*margen entre precio y descripcion */
+
+}
+
+footer { /*estilos del pie de página */
+    text-align: center;
+    background: url(imagenes/bg.jpg); /*url me permite colocar imagen y usarla como fondo */
+    padding: 40px; /*espaciamiento interno de 40 pixeles */
+
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px;
+}
+
+
+form {
+    margin: 40px 0; /* margen 40px arriba y abajo y 0 para los costados */
+}
+
+form label, form legend { /*aplica el mismo estilo a varios elementos usando , */
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+
+}
+
+.input-padron { 
+    display: block;
+    margin:0 0 20px;
+    padding: 10px 25px;
+    width: 50%; /* ocupa el 50% de los 940 */
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0; /*15px arriba y abajo y 0 a los laterales */
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none; /* quita el borde */
+    border-radius: 5px;
+    transition: 1s all; /* cambia la velocidad de transición de todas las propiedad del botón */
+    cursor: pointer; /*cambia la fecla del cursor por la manita apuntando */
+}
+
+.enviar:hover {
+    background: darkorange;
+    transform: scale(1.2); /*aumenta de tamaño el botón cuando colocas el mouse */
+}
+
+table {
+    margin: 40px 40px; /*40 px superior e inferior y 40 hacia los costados */
+}
+
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000000; /*definiendo border para la tabla */
+    padding: 8px 15px; /*8 px superior e inferior y 15 a los costados */
+    
+}
+
+/*Css para nuestra página HOME */
+.banner {
+    width: 100%;
+}
+
+
+
+.principal {
+    background: #FEFEFE;
+    padding: 3em 0;
+    width: 940px; /*ocupa 940 de ancho para centralizar algo */
+    margin: 0 auto;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em; /* em es 2 veces el tamaño que usa el navegador para el texto */
+    margin: 0 0 1em; /* 0 arriba, a ala derecha y abajo 1em una vez el tamaño de fuente padrón */
+    clear: left; /*cualquier configuración que venga después del titulo que la limpie */
+}
+
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal strong {
+    font-weight: bold;
+
+}
+
+.principal em {
+    font-style: italic; /* estilo de fuente */
+}
+
+.utensilios {
+    width: 120px;
+    float: left; /* coloca el elemento en la lateral de la página y deja a los otros elementos alrrededor de el utliza esta propiedad float hacia la izquierda */
+    margin: 0 20px 20px 0;
+}
+
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE,#888888); /*fondo de color degradado */
+
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-contenido {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.diferenciales {
+    padding: 3em 0;
+    background: #888888;
+}
+
+.contenido-diferenciales {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-diferenciales {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top; /*alinea verticalmente los ítems de la lista en la parte superior */
+}
+
+.items {
+    line-height: 1.5; /*Espacio entre en líneas */
+}
+
+.items::before { /*seudoelemento before,antes de cada ítems colocar la estrella */
+    content: "★"
+}
+
+.items:first-child { /*Usando la seudoclase first-child(primer hijo)al primer ítem colocalo en negrito */
+    font-weight: bold;
+
+}
+
+.imagen-diferenciales {
+    width: 60%;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 15px #000000; /*sombra, el primer parámetro es la ubicación de la sombra en el lado izquierdo superior, el segundo parámetro es la ubicación de la sombra es de el lado derecho superior, el tercero se refiere a la difuminación, el cuarto se refiere al tamaño de la difuminación y el último el color de la sombra */
+}
+
+.imagen-diferenciales:hover { /*cuando el mouse se posicione en la imagen que tenga la opacidad siguiente */
+    opacity: 0.3;
+}
+.video {
+    width: 560px; /*div se le coloca el mismo ancho que el video */
+    margin: 1em auto; /*centraliza el video */
+}
+
+@media screen and (max-width:480px){ /*ajustes para que un móvil iphone se vea a un tamaño responsivo */
+    h1 {
+        text-align: center;
+    }
+    nav {
+        position: static;
+    }
+
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
+        width: auto;
+    }
+    .lista-diferenciales, .imagen-diferenciales {
+        width: 100%;
+    }
+
+}
